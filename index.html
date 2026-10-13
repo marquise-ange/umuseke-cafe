@@ -1,11 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UMUSEKE-CAFE</title>
+    <meta name="description" content="Compare Umuseke Cafe built with Plain CSS and Tailwind CSS.">
+    <title>Umuseke Cafe | CSS Comparison</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #fffaf3;
+            color: #292524;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 22px 8%;
+            background: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e7e5e4;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: 800;
+            color: #92400e;
+            text-decoration: none;
+        }
+
+        .header-label {
+            color: #78716c;
+            font-size: 14px;
+        }
+
+        .hero {
+            max-width: 1100px;
+            margin: auto;
+            padding: 85px 24px 55px;
+            text-align: center;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 7px 16px;
+            border-radius: 30px;
+            background: #fef3c7;
+            color: #92400e;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            margin-top: 22px;
+            font-size: clamp(36px, 5vw, 58px);
+            line-height: 1.15;
+            letter-spacing: -1.5px;
+        }
+
+        h1 span {
+            color: #b45309;
+        }
+
+        .hero-description {
+            max-width: 650px;
+            margin: 22px auto 0;
+            color: #78716c;
+            font-size: 17px;
+        }
+
+        .choices {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px 24px 80px;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 28px;
+        }
+
+        .choice-card {
+            padding: 35px;
+            background: #ffffff;
+            border: 1px solid #e7e5e4;
+            border-radius: 22px;
+            box-shadow: 0 10px 30px rgba(41, 37, 36, 0.05);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .choice-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 18px 40px rgba(41, 37, 36, 0.10);
+        }
+
+        .icon {
+            width: 60px;
+            height: 60px;
+            display: grid;
+            place-items: center;
+            border-radius: 16px;
+            background: #fef3c7;
+            font-size: 29px;
+        }
+
+        .choice-card h2 {
+            margin-top: 22px;
+            font-size: 25px;
+        }
+
+        .choice-card p {
+            margin-top: 12px;
+            color: #78716c;
+        }
+
+        .features {
+            margin: 22px 0 28px;
+            list-style: none;
+        }
+
+        .features li {
+            margin: 10px 0;
+            color: #57534e;
+        }
+
+        .features li::before {
+            content: "✓";
+            margin-right: 10px;
+            color: #15803d;
+            font-weight: bold;
+        }
+
+        .button {
+            display: block;
+            width: 100%;
+            padding: 14px 20px;
+            text-align: center;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.2s ease;
+        }
+
+        .plain-button {
+            background: #292524;
+            color: #ffffff;
+        }
+
+        .plain-button:hover {
+            background: #44403c;
+        }
+
+        .tailwind-button {
+            background: #0e7490;
+            color: #ffffff;
+        }
+
+        .tailwind-button:hover {
+            background: #155e75;
+        }
+
+        .comparison-note {
+            max-width: 850px;
+            margin: 0 auto 75px;
+            padding: 24px;
+            text-align: center;
+            border-radius: 16px;
+            background: #f5f5f4;
+        }
+
+        .comparison-note h2 {
+            font-size: 22px;
+        }
+
+        .comparison-note p {
+            margin-top: 8px;
+            color: #78716c;
+        }
+
+        footer {
+            padding: 25px 20px;
+            background: #1c1917;
+            color: #d6d3d1;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        @media (max-width: 650px) {
+            header {
+                padding: 18px 6%;
+            }
+
+            .header-label {
+                display: none;
+            }
+
+            .hero {
+                padding-top: 60px;
+            }
+
+            .choices {
+                grid-template-columns: 1fr;
+                padding-right: 20px;
+                padding-left: 20px;
+            }
+
+            .choice-card {
+                padding: 27px;
+            }
+
+            .comparison-note {
+                margin-right: 20px;
+                margin-left: 20px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    
+
+    <header>
+        <a href="./index.html" class="logo">Umuseke Cafe.</a>
+        <p class="header-label">Frontend Styling Comparison</p>
+    </header>
+
+    <main>
+        <section class="hero">
+            <span class="tag">ONE WEBSITE · TWO APPROACHES</span>
+
+            <h1>
+                Welcome to <span>Umuseke Cafe</span>
+            </h1>
+
+            <p class="hero-description">
+                Explore our cafe website built in two different ways.
+                Choose Plain CSS or Tailwind CSS and compare how each
+                approach creates the design.
+            </p>
+        </section>
+
+        <section class="choices" aria-label="Choose a styling version">
+
+            <!-- PLAIN CSS CARD -->
+            <article class="choice-card">
+                <div class="icon" aria-hidden="true">🎨</div>
+
+                <h2>Plain CSS</h2>
+
+                <p>
+                    Discover the website styled with traditional CSS.
+                    Every layout, color, spacing rule, and responsive
+                    adjustment is written using custom CSS.
+                </p>
+
+                <ul class="features">
+                    <li>Custom CSS rules</li>
+                    <li>Full control over styling</li>
+                    <li>Responsive media queries</li>
+                    <li>Great for learning CSS fundamentals</li>
+                </ul>
+
+                <a href="plain-css/src/index.html" class="button plain-button">
+                    Explore Plain CSS →
+                </a>
+            </article>
+
+            <!-- TAILWIND CSS CARD -->
+            <article class="choice-card">
+                <div class="icon" aria-hidden="true">⚡</div>
+
+                <h2>Tailwind CSS</h2>
+
+                <p>
+                    Explore the same cafe concept using utility classes
+                    directly in HTML, with responsive styles and a
+                    dedicated CSS build process.
+                </p>
+
+                <ul class="features">
+                    <li>Utility-first styling</li>
+                    <li>Styles written in HTML classes</li>
+                    <li>Responsive prefixes like md: and lg:</li>
+                    <li>Tailwind CSS v4 build process</li>
+                </ul>
+
+                <a href="Tailwind-css/index.html" class="button tailwind-button">
+                    Explore Tailwind CSS →
+                </a>
+            </article>
+
+        </section>
+
+        <section class="comparison-note">
+            <h2>Why compare both?</h2>
+
+            <p>
+                Both approaches can build responsive websites.
+                Explore each version, inspect the code, and discover
+                which styling workflow you prefer.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Umuseke Cafe · Built for learning and comparison.</p>
+    </footer>
+
 </body>
+
 </html>
