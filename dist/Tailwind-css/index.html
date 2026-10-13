@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Discover delicious coffee, fresh pastries, and a warm atmosphere at Umuseke Cafe.">
+    <title>Umuseke Cafe | Coffee, Food & Good Moments</title>
+
+    <!-- Generated Tailwind CSS -->
+    <link rel="stylesheet" href="./Dist/output.css">
+</head>
+
+<body class="bg-[#fffaf3] text-stone-800 antialiased">
+
+    <!-- NAVIGATION -->
+    <header class="sticky top-0 z-50 border-b border-stone-200 bg-white/95 shadow-sm backdrop-blur">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8">
+
+            <a href="#home" class="text-2xl font-extrabold tracking-tight text-amber-800">
+                Umuseke<span class="text-stone-800"> Cafe.</span>
+            </a>
+
+            <!-- Desktop navigation -->
+            <div class="hidden items-center gap-7 md:flex">
+                <a href="#home" class="font-medium transition hover:text-amber-700">Home</a>
+                <a href="#about" class="font-medium transition hover:text-amber-700">About</a>
+                <a href="#menu" class="font-medium transition hover:text-amber-700">Our Menu</a>
+                <a href="#contact" class="font-medium transition hover:text-amber-700">Contact</a>
+                <a href="#menu"
+                    class="rounded-full bg-amber-800 px-5 py-3 font-semibold text-white transition hover:bg-amber-900">
+                    Explore Menu
+                </a>
+            </div>
+
+            <!-- Mobile navigation -->
+            <details class="relative md:hidden">
+                <summary class="cursor-pointer list-none rounded-lg border border-stone-300 px-4 py-2 font-semibold">
+                    Menu ☰
+                </summary>
+                <div
+                    class="absolute right-0 top-12 flex w-48 flex-col gap-4 rounded-xl border border-stone-200 bg-white p-5 shadow-xl">
+                    <a href="#home" class="hover:text-amber-700">Home</a>
+                    <a href="#about" class="hover:text-amber-700">About</a>
+                    <a href="#menu" class="hover:text-amber-700">Our Menu</a>
+                    <a href="#contact" class="hover:text-amber-700">Contact</a>
+                </div>
+            </details>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section id="home" class="overflow-hidden">
+            <div class="mx-auto grid max-w-7xl items-center gap-10 px-5 py-16 md:grid-cols-2 md:px-8 md:py-24">
+
+                <div>
+                    <span class="inline-block rounded-full bg-amber-100 px-4 py-2 text-sm font-bold text-amber-900">
+                        YOUR DAILY DOSE OF HAPPINESS
+                    </span>
+
+                    <h1 class="mt-6 text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
+                        Every cup tells a
+                        <span class="text-amber-800">beautiful story.</span>
+                    </h1>
+
+                    <p class="mt-6 max-w-xl text-lg leading-8 text-stone-600">
+                        Welcome to Umuseke Cafe, where rich coffee, delicious
+                        food, and warm moments come together. Your perfect
+                        place to relax, connect, and recharge.
+                    </p>
+
+                    <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+                        <a href="#menu"
+                            class="rounded-full bg-amber-800 px-7 py-4 text-center font-bold text-white transition hover:bg-amber-900">
+                            Discover Our Menu →
+                        </a>
+
+                        <a href="#about"
+                            class="rounded-full border border-stone-300 px-7 py-4 text-center font-bold transition hover:border-amber-800 hover:text-amber-800">
+                            Our Story
+                        </a>
+                    </div>
+
+                    <div class="mt-10 flex flex-wrap gap-8 border-t border-stone-200 pt-7">
+                        <div>
+                            <p class="text-2xl font-extrabold text-amber-800">Fresh</p>
+                            <p class="mt-1 text-sm text-stone-500">Made with care</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-extrabold text-amber-800">Cozy</p>
+                            <p class="mt-1 text-sm text-stone-500">A welcoming space</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-extrabold text-amber-800">Local</p>
+                            <p class="mt-1 text-sm text-stone-500">Inspired by Rwanda</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero image -->
+                <div class="relative">
+                    <div class="absolute -right-5 -top-5 h-32 w-32 rounded-full bg-amber-200/70 blur-2xl"></div>
+
+                    <img src="/images/image.avif" alt="Warm and welcoming cafe interior"
+                        class="relative h-[340px] w-full rounded-3xl object-cover shadow-2xl sm:h-[450px]">
+
+                    <div class="absolute -bottom-5 left-4 rounded-2xl bg-white p-5 shadow-xl sm:left-8">
+                        <p class="font-bold text-stone-900">Made for your moments</p>
+                        <p class="mt-1 text-sm text-stone-500">Coffee, comfort and connection.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FEATURES -->
+        <section class="bg-white py-14">
+            <div class="mx-auto grid max-w-7xl gap-8 px-5 sm:grid-cols-2 md:px-8 lg:grid-cols-3">
+
+                <article
+                    class="rounded-2xl border border-stone-100 p-7 transition hover:-translate-y-1 hover:shadow-lg">
+                    <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-amber-100 text-3xl">
+                        ☕
+                    </div>
+                    <h2 class="mt-5 text-xl font-bold">Quality Coffee</h2>
+                    <p class="mt-3 leading-7 text-stone-600">
+                        Enjoy carefully prepared coffee and comforting drinks
+                        for a refreshing start or a relaxing break.
+                    </p>
+                </article>
+
+                <article
+                    class="rounded-2xl border border-stone-100 p-7 transition hover:-translate-y-1 hover:shadow-lg">
+                    <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-amber-100 text-3xl">
+                        🥐
+                    </div>
+                    <h2 class="mt-5 text-xl font-bold">Fresh Bites</h2>
+                    <p class="mt-3 leading-7 text-stone-600">
+                        Pair your favorite drink with delicious pastries,
+                        snacks, and satisfying cafe favorites.
+                    </p>
+                </article>
+
+                <article
+                    class="rounded-2xl border border-stone-100 p-7 transition hover:-translate-y-1 hover:shadow-lg sm:col-span-2 lg:col-span-1">
+                    <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-amber-100 text-3xl">
+                        🤎
+                    </div>
+                    <h2 class="mt-5 text-xl font-bold">Warm Atmosphere</h2>
+                    <p class="mt-3 leading-7 text-stone-600">
+                        Meet friends, get some work done, or simply slow down
+                        and enjoy a comfortable space.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="py-20 sm:py-24">
+            <div class="mx-auto grid max-w-7xl items-center gap-12 px-5 md:grid-cols-2 md:px-8">
+
+                <img src="/images/image1.avif" alt="Coffee being prepared at a cafe" loading="lazy"
+                    class="h-[320px] w-full rounded-3xl object-cover shadow-lg sm:h-[430px]">
+
+                <div>
+                    <p class="font-bold uppercase tracking-[0.2em] text-amber-800">
+                        A little about us
+                    </p>
+
+                    <h2 class="mt-4 text-3xl font-extrabold leading-tight sm:text-4xl">
+                        More than coffee. A place to feel at home.
+                    </h2>
+
+                    <p class="mt-6 leading-8 text-stone-600">
+                        At Umuseke Cafe, we believe the best moments often
+                        happen around a table. From the first sip of coffee
+                        to conversations with friends, every visit should
+                        feel special.
+                    </p>
+
+                    <p class="mt-4 leading-8 text-stone-600">
+                        Our goal is simple: offer a welcoming cafe experience
+                        where people can enjoy good food, take a break, and
+                        create memories.
+                    </p>
+
+                    <a href="#contact"
+                        class="mt-7 inline-block border-b-2 border-amber-800 pb-1 font-bold text-amber-900 hover:text-amber-700">
+                        Come and say hello →
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- MENU SECTION -->
+        <section id="menu" class="bg-stone-900 py-20 text-white sm:py-24">
+            <div class="mx-auto max-w-7xl px-5 md:px-8">
+
+                <div class="mx-auto max-w-2xl text-center">
+                    <p class="font-bold uppercase tracking-[0.2em] text-amber-400">
+                        Something delicious
+                    </p>
+
+                    <h2 class="mt-4 text-3xl font-extrabold sm:text-4xl">
+                        A taste of Umuseke
+                    </h2>
+
+                    <p class="mt-4 leading-7 text-stone-300">
+                        Find a new favorite or enjoy a familiar comfort.
+                        There's something for every kind of cafe moment.
+                    </p>
+                </div>
+
+                <div class="mt-12 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
+
+                    <article
+                        class="overflow-hidden rounded-2xl bg-white text-stone-800 transition hover:-translate-y-1 hover:shadow-2xl">
+                        <img src="/images/imgage2.avif" alt="Freshly prepared iced coffee" loading="lazy"
+                            class="h-56 w-full object-cover">
+                        <div class="p-6">
+                            <div class="flex items-start justify-between gap-3">
+                                <h3 class="text-xl font-bold">Signature Coffee</h3>
+                                <span
+                                    class="rounded-full bg-amber-100 px-3 py-1 text-sm font-bold text-amber-900">Coffee</span>
+                            </div>
+                            <p class="mt-3 leading-7 text-stone-600">
+                                Smooth, rich, and perfect for your daily coffee break.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="overflow-hidden rounded-2xl bg-white text-stone-800 transition hover:-translate-y-1 hover:shadow-2xl">
+                        <img src="/images/image3.avif" alt="Freshly baked bread and pastries" loading="lazy"
+                            class="h-56 w-full object-cover">
+                        <div class="p-6">
+                            <div class="flex items-start justify-between gap-3">
+                                <h3 class="text-xl font-bold">Fresh Pastries</h3>
+                                <span
+                                    class="rounded-full bg-amber-100 px-3 py-1 text-sm font-bold text-amber-900">Bakery</span>
+                            </div>
+                            <p class="mt-3 leading-7 text-stone-600">
+                                A delicious treat to accompany your favorite drink.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="overflow-hidden rounded-2xl bg-white text-stone-800 transition hover:-translate-y-1 hover:shadow-2xl sm:col-span-2 lg:col-span-1">
+                        <img src="/images/image4.avif"
+                            alt="Fresh cafe meal served in a bowl" loading="lazy" class="h-56 w-full object-cover">
+                        <div class="p-6">
+                            <div class="flex items-start justify-between gap-3">
+                                <h3 class="text-xl font-bold">Cafe Favorites</h3>
+                                <span
+                                    class="rounded-full bg-amber-100 px-3 py-1 text-sm font-bold text-amber-900">Food</span>
+                            </div>
+                            <p class="mt-3 leading-7 text-stone-600">
+                                Enjoy a satisfying bite in a relaxed atmosphere.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+
+                <p class="mt-8 text-center text-sm text-stone-400">
+                    Menu descriptions are examples. Add your actual menu and prices before publishing.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- CALL TO ACTION -->
+        <section class="px-5 py-20 sm:py-24">
+            <div class="mx-auto max-w-5xl rounded-3xl bg-amber-100 px-6 py-12 text-center sm:px-12 sm:py-16">
+                <h2 class="text-3xl font-extrabold sm:text-4xl">
+                    Your next favorite moment starts here.
+                </h2>
+
+                <p class="mx-auto mt-5 max-w-2xl leading-7 text-stone-600">
+                    Whether you're meeting a friend or taking a little time
+                    for yourself, we'd love to welcome you.
+                </p>
+
+                <a href="#contact"
+                    class="mt-7 inline-block rounded-full bg-amber-800 px-7 py-4 font-bold text-white transition hover:bg-amber-900">
+                    Get in Touch
+                </a>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="border-t border-stone-200 bg-white py-16">
+            <div class="mx-auto grid max-w-7xl gap-10 px-5 md:grid-cols-2 md:px-8">
+
+                <div>
+                    <h2 class="text-3xl font-extrabold">Visit Umuseke Cafe</h2>
+                    <p class="mt-4 max-w-lg leading-7 text-stone-600">
+                        We'd love to hear from you. Get in touch to ask about
+                        our menu, opening hours, or cafe experience.
+                    </p>
+                </div>
+
+                <div class="space-y-5">
+                    <div>
+                        <h3 class="font-bold">Location</h3>
+                        <p class="mt-1 text-stone-600">Add your cafe's address here.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold">Opening Hours</h3>
+                        <p class="mt-1 text-stone-600">Add your actual opening hours here.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold">Contact</h3>
+                        <p class="mt-1 text-stone-600">Add your phone number or email here.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-stone-950 px-5 py-7 text-center text-sm text-stone-300">
+        <p>
+            © <span id="year">2026</span> Umuseke Cafe. All rights reserved.
+        </p>
+        <p class="mt-2 text-stone-500">Made with care, coffee, and community.</p>
+    </footer>
+
+</body>
+
+</html>
